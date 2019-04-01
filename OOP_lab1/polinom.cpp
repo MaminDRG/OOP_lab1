@@ -24,7 +24,13 @@ int TPolinom::roots(number* x)
 {
     int ret = 0;
     number determ = b*b-4*a*c;
-    if (determ == 0)
+    if(a==0)
+    {
+        x[0] = -c/b;
+        ret = 1;
+    }
+    
+    else if (determ == 0)
     {
         x[0] = (-b)/(2*a);
         ret = 1;
