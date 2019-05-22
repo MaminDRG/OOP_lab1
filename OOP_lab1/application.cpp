@@ -76,6 +76,7 @@ int TApplication::run()
                     
                 }
                 std::cout << std::endl;
+                delete[] rootsMas;
                 break;
             }
                 
